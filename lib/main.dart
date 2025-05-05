@@ -1,4 +1,5 @@
 import 'package:firebase_x_flutter/Auth/auth.dart';
+
 import 'package:firebase_x_flutter/Social_Page/HomeAthPage.dart';
 import 'package:firebase_x_flutter/Social_Page/pages/profile_page.dart';
 import 'package:firebase_x_flutter/Social_Page/pages/user_page.dart';
@@ -20,10 +21,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+
       debugShowCheckedModeBanner: false,
-      home: AuthPage(),
+      home:AuthPage(),
       theme: dirkMode,
       darkTheme: dirkMode,
+
       routes: {
         '/auth': (context) => const AuthPage(),
         '/home': (context) => HomeAthPage(),
